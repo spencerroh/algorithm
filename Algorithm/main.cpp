@@ -44,10 +44,33 @@
 
 */
 
+#include <functional>
 #include "algorithm.h" 
+#include "BinaryTree.h"
 
 
-int main() {
+int main() 
+{
+	BinaryTree<int, int, std::less<int>> tree;
+
+	tree.Add(5, 5);
+	tree.Add(3, 3);
+	tree.Add(8, 8);
+	tree.Add(1, 1);
+	tree.Add(4, 4);
+	tree.Add(6, 6);
+	tree.Add(9, 9);
+	tree.Add(10, 10);
+
+	auto count = tree.GetCount();
+	auto depth = tree.GetDepth();
+
+	tree.Remove(8);
+	tree.Remove(6);
+	tree.Remove(4);
+	tree.Remove(3);
+
+	
 
 	return 0;
 }
