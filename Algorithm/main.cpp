@@ -44,31 +44,38 @@
 
 */
 
+#include <iostream>
 #include <functional>
 #include "algorithm.h" 
 #include "BinaryTree.h"
 
+using namespace std;
 
 int main() 
 {
+	int unique[] = {
+		1, 1, 3, 4, 4, 4, 5, 6, 7, 7, 8, 9, 9
+	};
+
+	int u = Unique<int>(unique, sizeof(unique) / sizeof(unique[0]));
+	
 	BinaryTree<int, int, std::less<int>> tree;
 
-	tree.Add(5, 5);
-	tree.Add(3, 3);
-	tree.Add(8, 8);
-	tree.Add(1, 1);
-	tree.Add(4, 4);
-	tree.Add(6, 6);
-	tree.Add(9, 9);
-	tree.Add(10, 10);
+	for (int i = 0; i < 10; i++)
+		tree.Add(i, i);
 
-	auto count = tree.GetCount();
-	auto depth = tree.GetDepth();
 
-	tree.Remove(8);
-	tree.Remove(6);
-	tree.Remove(4);
-	tree.Remove(3);
+
+	int key = 0;
+	int next = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		if (tree.Next(i, next))
+			cout << "next of " << i << " is " << next << endl;
+		else
+			cout << "next of " << i << " is nothing." << endl;
+	}
 
 	
 

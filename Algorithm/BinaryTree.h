@@ -158,6 +158,28 @@ class BinaryTree
 			}
 		}
 
+		Node* Next() 
+		{
+			if (Right != nullptr)
+			{
+				return Right->GetLeftMost();
+			}
+			else
+			{
+				Node* current = this;
+				
+				while (current->Parent != nullptr)
+				{
+					if (current == current->Parent->Left)
+						return current->Parent;
+					else
+						current = current->Parent;
+				}
+
+				return nullptr;
+			}
+		}
+
 	private:
 		void Swap(Node* node)
 		{
@@ -234,6 +256,27 @@ public:
 				Node* removed = found->Remove();
 				delete removed;
 			}
+		}
+	}
+
+	bool Next(const TKey& key, TValue& value)
+	{
+		if (mNode == nullptr)
+			return false;
+		else
+		{
+			Node* found = mNode->Find(key);
+
+			if (found == nullptr)
+				return false;
+
+			Node* next = found->Next();
+
+			if (next == nullptr)
+				return false;
+
+			value = next->GetValue();
+			return true;
 		}
 	}
 	
