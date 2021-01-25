@@ -9,6 +9,16 @@
 
 ## 자료구조
 - Linked List
+```
+template <class T>
+List<T>* Add(List<T>** head, T value);
+
+template <class T>
+void Remove(List<T>** head, T value);
+
+template <class T>
+void Clear(List<T>** head);
+```
 - Binary Tree
   - Add/Remove/Find
   - Next
