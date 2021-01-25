@@ -9,7 +9,7 @@
 
 ## 자료구조
 - Linked List
-```
+```cpp
 template <class T>
 List<T>* Add(List<T>** head, T value);
 
