@@ -1,23 +1,31 @@
 # 알고리즘
 
-## 자료구조
+## 구현 예정
+- Queue
+- Stack
+- Vector
+- KMP
+- Graph에서 Loop 찾기
 
-### Vector
-### Linked List
-### Binary Tree
-### Heap
+## 자료구조
+- Linked List
+- Binary Tree
+  - Add/Remove/Find
+  - Next
+- Heap
+  
 
 ## Data Manipulation
-### Merge Sort
-### Unique
+- Merge Sort
+- Unique
 
 ## Search
-### Parametric Search
-### Dijkstra Search
-### Lower/Upper Bound
-
-
+- Dijkstra Search
+- Parametric Search
+- Lower/Upper Bound
 
 ## Common
-### Hash
-### String Operation
+- Hash
+  - djb2
+- String Operation
+  - length, copy, compare, clone
