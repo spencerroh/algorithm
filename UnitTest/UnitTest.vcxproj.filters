@@ -32,5 +32,11 @@
     <ClCompile Include="DijkstraTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UniqueTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

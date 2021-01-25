@@ -21,9 +21,6 @@
     <ClCompile Include="Search.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Hash.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -38,13 +35,19 @@
     <ClInclude Include="algorithm.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Sort.h">
-      <Filter>리소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Heap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="DijkstraSearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
