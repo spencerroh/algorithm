@@ -24,6 +24,36 @@ void Clear(List<T>** head);
   - Next
 - Heap
   - Push, Pop
+- Segment Tree
+```cpp
+struct MaxOperator {
+public:
+    int operator()(const int& a, const int& b)
+    {
+        return a < b ? b : a;
+    }
+};
+SegmentTree<int, MaxOperator, 0> segmentTree(4);
+segmentTree.Push(1);
+segmentTree.Push(2);
+segmentTree.Push(3);
+segmentTree.Push(4);
+
+int max = segmentTree.GetSegment(1, 2);
+```
+- Union-Find
+```cpp
+UnionFind union(4);
+union.Union(0, 1);
+union.Union(2, 3);
+
+int g1 = union.Find(1); // 0
+int g2 = union.Find(3); // 2
+
+union.Union(0, 2);
+
+int g3 = union.Find(3); // 0
+```
   
 
 ## Data Manipulation
