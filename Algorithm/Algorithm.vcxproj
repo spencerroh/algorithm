@@ -149,7 +149,6 @@
     <ClCompile Include="Hash.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Search.cpp" />
     <ClCompile Include="String.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -157,8 +156,10 @@
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="DijkstraSearch.h" />
     <ClInclude Include="Heap.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Search.h" />
     <ClInclude Include="Sort.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

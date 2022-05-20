@@ -53,7 +53,9 @@ using namespace std;
 
 int main() 
 {
-	int unique[] = {
+	/*
+	int unique[] = 
+	{
 		1, 1, 3, 4, 4, 4, 5, 6, 7, 7, 8, 9, 9
 	};
 
@@ -61,23 +63,20 @@ int main()
 	
 	BinaryTree<int, int, std::less<int>> tree;
 
-	for (int i = 0; i < 10; i++)
-		tree.Add(i, i);
+	tree.Add(5, 5);
+	tree.Add(7, 7);
+	tree.Add(8, 8);
+
+	tree.Remove(5);
+	*/
 
 
+	int items = {
+		1, 9, 4, 3, 6, 7, 2, 9, 3, 6, 7
+	};
 
-	int key = 0;
-	int next = 0;
-
-	for (int i = 0; i < 10; i++)
-	{
-		if (tree.Next(i, next))
-			cout << "next of " << i << " is " << next << endl;
-		else
-			cout << "next of " << i << " is nothing." << endl;
-	}
-
-	
+	QuickSort(items, 0, sizeof(unique) / sizeof(unique[0]) - 1, less<int>jnjjj bnolo9bu  v =888888888i  vb=vvvvvvvvvvvvvvvvvvvvbj)
 
 	return 0;
 }
+

@@ -46,3 +46,39 @@ int Unique(T* sortedArray, size_t length)
 
 	return j;
 }
+
+template <class T>
+int Swap(T& value1, T& value2)
+{
+	T temp = value1;
+	value1 = value2;
+	value2 = temp;
+}
+
+template <class T, class Predict>
+void QuickSort(T* arr, int first, int last, Predict p)
+{
+	if (first >= last)
+		return;
+
+	int pivot = first;
+	int left = first;
+	int right = last;
+
+	while (left < right)
+	{
+		while (arr[left] <= arr[pivot] && left < last)
+			left++;
+
+		while (arr[right] > arr[pivot])
+			right--;
+
+		if (left < right)
+			Swap(arr[left], arr[right]);
+	}
+
+	Swap(arr[pivot], arr[right]);
+
+	QuickSort(arr, first, right - 1);
+	QuickSort(arr, right + 1, last);
+}
